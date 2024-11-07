@@ -7,7 +7,11 @@
 ```bash
 npx prisma migrate dev
 ```
-5. Ejecutar  
+5. Levantar el servidor de NATS
+```bash
+docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
+```
+6. Ejecutar  
 ```bash
 npm run start:dev
 ```
